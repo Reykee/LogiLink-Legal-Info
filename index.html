@@ -3,257 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy & Terms – LogisticLink</title>
+<title>Privacy Policy & Terms of Use – LogisticLink</title>
 
 <style>
 :root {
-    --primary: #FF7A00;
-    --primary-light: #FF9A3C;
-    --primary-dark: #CC6200;
+    --primary:#FF7A00;
+    --primary-light:#FF9A3C;
+    --primary-dark:#CC6200;
 
-    --bg: #0B1220;
-    --surface: rgba(20, 28, 47, 0.75);
-    --surface-2: rgba(27, 37, 64, 0.75);
+    --bg:#0B1220;
+    --surface:rgba(20,28,47,0.75);
+    --surface-2:rgba(27,37,64,0.75);
 
-    --border: rgba(255,122,0,0.15);
+    --border:rgba(255,122,0,0.15);
 
-    --text: #E6EAF2;
-    --text-muted: #9AA4BF;
+    --text:#E6EAF2;
+    --text-muted:#9AA4BF;
 }
 
-/* Base */
-* { box-sizing: border-box; }
+*{box-sizing:border-box;}
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-    color: var(--text);
-
-    background: radial-gradient(circle at top, #0F172A, #0B1220);
-    padding: 24px 16px 50px;
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+    line-height:1.7;
+    color:var(--text);
+    background:radial-gradient(circle at top,#0F172A,#0B1220);
+    margin:0;
+    padding:24px 16px 48px;
 }
 
 /* Header */
-.header {
-    text-align: center;
-    margin-bottom: 30px;
+.header{text-align:center;margin-bottom:36px;}
+
+.logo-wrap{display:flex;align-items:center;justify-content:center;gap:12px;}
+.logo-icon img{width:50px;}
+.logo-name{
+    font-size:2rem;
+    font-weight:800;
+    background:linear-gradient(135deg,#FF7A00,#FFB066);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.logo-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+.tagline{
+    margin-top:10px;
+    font-size:0.9rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    background:linear-gradient(90deg,#FF7A00,#FF9A3C,#FF7A00);
+    background-size:200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:flow 5s linear infinite;
 }
 
-.logo-icon img {
-    width: 50px;
-}
-
-.logo-name {
-    font-size: 1.9rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #FF7A00, #FFB066);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.tagline {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    margin-top: 6px;
-
-    background: linear-gradient(90deg,#FF7A00,#FF9A3C,#FF7A00);
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: flow 5s linear infinite;
-}
-
-@keyframes flow {
-    0% {background-position:0%}
-    100% {background-position:200%}
+@keyframes flow{
+    0%{background-position:0%}
+    100%{background-position:200%}
 }
 
 /* Container */
-.container {
-    max-width: 850px;
-    margin: auto;
-
-    background: var(--surface);
-    backdrop-filter: blur(14px);
-
-    border-radius: 18px;
-    border: 1px solid var(--border);
-
-    padding: 36px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+.container{
+    max-width:820px;
+    margin:0 auto;
+    background:var(--surface);
+    backdrop-filter:blur(14px);
+    padding:40px;
+    border-radius:16px;
+    border:1px solid var(--border);
+    box-shadow:0 10px 50px rgba(0,0,0,0.7);
 }
 
 /* Tabs */
-.tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
+.tabs{display:flex;justify-content:center;margin-bottom:36px;gap:12px;}
+
+.tab-btn{
+    padding:10px 26px;
+    border-radius:24px;
+    border:1px solid var(--border);
+    background:var(--surface-2);
+    color:var(--text-muted);
+    cursor:pointer;
+    transition:0.3s;
 }
 
-.tab-btn {
-    padding: 10px 22px;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    background: var(--surface-2);
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: 0.3s;
+.tab-btn.active{
+    background:linear-gradient(135deg,#FF7A00,#CC6200);
+    color:#fff;
+    box-shadow:0 0 20px rgba(255,122,0,0.4);
 }
 
-.tab-btn.active {
-    background: linear-gradient(135deg, #FF7A00, #CC6200);
-    color: white;
-    box-shadow: 0 0 20px rgba(255,122,0,0.4);
+/* Content */
+.content-section{display:none;}
+.content-section.active{display:block;animation:fadeIn .4s ease;}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(8px);}
+    to{opacity:1;}
 }
 
-/* Sections */
-.content-section { display: none; }
-.content-section.active {
-    display: block;
-    animation: fade 0.4s ease;
+h2{color:var(--primary);}
+h3{color:var(--primary-light);margin-top:28px;}
+h4{color:var(--text-muted);}
+
+ul{padding-left:20px;}
+li{margin-bottom:6px;}
+
+.highlight-box{
+    background:rgba(255,122,0,0.06);
+    border-left:3px solid var(--primary);
+    padding:14px;
+    border-radius:8px;
+    margin:16px 0;
 }
 
-@keyframes fade {
-    from {opacity:0; transform:translateY(10px);}
-    to {opacity:1; transform:translateY(0);}
-}
+a{color:var(--primary);}
 
-/* Typography */
-h2 {
-    color: var(--primary);
-    margin-bottom: 10px;
-}
-
-h3 {
-    color: var(--primary-light);
-    margin-top: 25px;
-}
-
-h4 {
-    color: var(--text-muted);
-}
-
-p { color: var(--text); }
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-/* Highlight */
-.highlight-box {
-    background: rgba(255,122,0,0.06);
-    border-left: 3px solid var(--primary);
-    padding: 14px;
-    border-radius: 8px;
-    margin: 16px 0;
-}
-
-/* Links */
-a {
-    color: var(--primary);
-    text-decoration: none;
-}
-
-/* Footer */
-.last-updated {
-    text-align: center;
-    margin-top: 40px;
-    color: var(--text-muted);
-    font-size: 0.85rem;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .container { padding: 22px; }
+.last-updated{
+    text-align:center;
+    margin-top:44px;
+    border-top:1px solid var(--border);
+    padding-top:20px;
+    color:var(--text-muted);
 }
 </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <div class="header">
-    <div class="logo-wrap">
-        <div class="logo-icon">
-            <img src="https://i.imgur.com/rBfmnru.png">
-        </div>
-        <span class="logo-name">LogisticLink</span>
-    </div>
-    <div class="tagline">Move Anything Anywhere</div>
+<div class="logo-wrap">
+<div class="logo-icon">
+<img src="https://i.imgur.com/rBfmnru.png">
+</div>
+<span class="logo-name">LogisticLink</span>
+</div>
+<p class="tagline">Move Anything Anywhere</p>
 </div>
 
 <div class="container">
 
-<!-- Tabs -->
 <div class="tabs">
-    <button class="tab-btn active" onclick="showTab('privacy')">Privacy</button>
-    <button class="tab-btn" onclick="showTab('terms')">Terms</button>
+<button class="tab-btn active" onclick="showTab('privacy')">Privacy Policy</button>
+<button class="tab-btn" onclick="showTab('terms')">Terms of Use</button>
 </div>
 
 <!-- PRIVACY -->
 <div id="privacy" class="content-section active">
+
 <h2>Privacy Policy</h2>
 
-<p><strong>Effective:</strong> April 7, 2026</p>
+<p><strong>Effective Date:</strong> April 7, 2026<br>
+<strong>Last Updated:</strong> April 7, 2026</p>
 
 <h3>1. Introduction</h3>
-<p>LogisticLink connects users with transport providers for logistics and delivery services.</p>
+<p>
+LogisticLink is a global logistics platform connecting users with independent drivers and transport providers.
+We are committed to protecting your personal data.
+</p>
 
-<h3>2. Data We Collect</h3>
+<h3>2. Definitions</h3>
 <ul>
-<li>Name & phone</li>
-<li>Locations & delivery info</li>
-<li>Item images</li>
-<li>Payment data</li>
+<li><strong>Service:</strong> LogisticLink application</li>
+<li><strong>User:</strong> Platform user</li>
+<li><strong>Driver:</strong> Independent contractor</li>
+<li><strong>Personal Data:</strong> Identifiable information</li>
 </ul>
 
-<h3>3. Usage</h3>
+<h3>3. Information We Collect</h3>
 <ul>
-<li>Process deliveries</li>
-<li>Enable tracking</li>
-<li>Improve services</li>
+<li>Personal info (name, phone, email)</li>
+<li>Location & delivery data</li>
+<li>Device & analytics data</li>
+<li>Payment information</li>
 </ul>
 
-<div class="highlight-box">
-We do NOT sell your data.
-</div>
+<h3>4. How We Use Data</h3>
+<ul>
+<li>Service delivery</li>
+<li>Matching with drivers</li>
+<li>Fraud prevention</li>
+<li>Platform improvement</li>
+</ul>
 
-<h3>Contact</h3>
+<h3>5. Cookies & Tracking</h3>
+<p>We use tracking technologies to improve experience.</p>
+
+<h3>6. Data Sharing</h3>
+<ul>
+<li>Drivers</li>
+<li>Payment providers</li>
+<li>Cloud infrastructure</li>
+</ul>
+
+<h3>7. International Transfers</h3>
+<p>Your data may be processed globally.</p>
+
+<h3>8. Data Retention</h3>
+<p>We retain data as required legally and operationally.</p>
+
+<h3>9. Security</h3>
+<p>We use encryption and secure systems.</p>
+
+<h3>10. Your Rights</h3>
+<ul>
+<li>Access</li>
+<li>Correction</li>
+<li>Deletion</li>
+<li>Portability</li>
+</ul>
+
+<h3>11. Data Breach Notification</h3>
+<p>Users will be notified if required by law.</p>
+
+<h3>12. Children's Privacy</h3>
+<p>18+ only.</p>
+
+<h3>13. Changes</h3>
+<p>Policy may be updated.</p>
+
+<h3>14. Contact</h3>
 <p>support@logisticlink.com</p>
+
 </div>
 
 <!-- TERMS -->
 <div id="terms" class="content-section">
+
 <h2>Terms of Use</h2>
 
 <h3>1. Agreement</h3>
-<p>By using LogisticLink, you agree to these terms.</p>
+<p>By using LogisticLink, you agree to these Terms.</p>
 
-<h3>2. Services</h3>
-<p>We connect users with drivers.</p>
+<h3>2. Platform Nature</h3>
+<p>We connect users and drivers.</p>
 
 <div class="highlight-box">
-LogisticLink is a platform, not a transport provider.
+We are NOT a transport provider.
 </div>
 
-<h3>3. Liability</h3>
-<p>Use at your own risk.</p>
+<h3>3. Eligibility</h3>
+<ul><li>18+</li><li>Accurate info required</li></ul>
 
-<h3>Contact</h3>
+<h3>4. Responsibilities</h3>
+<ul>
+<li>Provide accurate details</li>
+<li>Legal goods only</li>
+</ul>
+
+<h3>5. Payments</h3>
+<p>Handled by third parties.</p>
+
+<h3>6. Refund Policy</h3>
+<p>Refunds depend on delivery status and review.</p>
+
+<h3>7. Disputes</h3>
+<p>Resolved via platform.</p>
+
+<h3>8. Driver Agreement</h3>
+<p>Drivers are independent contractors.</p>
+
+<h3>9. Liability</h3>
+<p>We are not liable for damages or losses.</p>
+
+<div class="highlight-box">
+Use at your own risk.
+</div>
+
+<h3>10. Legal Enforcement</h3>
+<p>Violations may lead to termination or legal action.</p>
+
+<h3>11. Governing Law</h3>
+<p>Depends on jurisdiction.</p>
+
+<h3>12. Contact</h3>
 <p>support@logisticlink.com</p>
+
 </div>
 
 <div class="last-updated">
@@ -263,16 +288,13 @@ LogisticLink is a platform, not a transport provider.
 </div>
 
 <script>
-function showTab(tabName) {
-    document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-
-    document.getElementById(tabName).classList.add('active');
-
-    const btn = Array.from(document.querySelectorAll('.tab-btn'))
-        .find(b => b.getAttribute('onclick').includes(tabName));
-
-    if (btn) btn.classList.add('active');
+function showTab(tabName){
+document.querySelectorAll('.content-section').forEach(s=>s.classList.remove('active'));
+document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+document.getElementById(tabName).classList.add('active');
+const btn=[...document.querySelectorAll('.tab-btn')]
+.find(b=>b.getAttribute('onclick').includes(tabName));
+if(btn)btn.classList.add('active');
 }
 </script>
 
