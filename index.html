@@ -1,302 +1,2031 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy & Terms of Use – LogisticLink</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-:root {
-    --primary:#FF7A00;
-    --primary-light:#FF9A3C;
-    --primary-dark:#CC6200;
+    <title>Privacy Policy &amp; Terms of Use – CARSA Go</title>
 
-    --bg:#0B1220;
-    --surface:rgba(20,28,47,0.75);
-    --surface-2:rgba(27,37,64,0.75);
+    <style>
+        :root {
+            /* CARSA GO BRAND */
+            --bg-black: #050607;
+            --bg-black-soft: #090b0d;
 
-    --border:rgba(255,122,0,0.15);
+            --orange-900: #7a3200;
+            --orange-800: #a94700;
+            --orange-700: #d65f00;
+            --orange-500: #ff7900;
+            --orange-400: #ff8a16;
 
-    --text:#E6EAF2;
-    --text-muted:#9AA4BF;
-}
+            --ice: #fff1e3;
+            --text: #f5f5f5;
+            --muted: #a7abb1;
 
-*{box-sizing:border-box;}
+            --glass: rgba(25, 27, 31, 0.58);
+            --glass-strong: rgba(25, 27, 31, 0.78);
+            --glass-border: rgba(255, 137, 30, 0.22);
+            --glass-highlight: rgba(255, 255, 255, 0.12);
 
-body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
-    line-height:1.7;
-    color:var(--text);
-    background:radial-gradient(circle at top,#0F172A,#0B1220);
-    margin:0;
-    padding:24px 16px 48px;
-}
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.78);
+        }
 
-/* Header */
-.header{text-align:center;margin-bottom:36px;}
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-.logo-wrap{display:flex;align-items:center;justify-content:center;gap:12px;}
-.logo-icon img{width:50px;}
-.logo-name{
-    font-size:2rem;
-    font-weight:800;
-    background:linear-gradient(135deg,#FF7A00,#FFB066);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-.tagline{
-    margin-top:10px;
-    font-size:0.9rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    background:linear-gradient(90deg,#FF7A00,#FF9A3C,#FF7A00);
-    background-size:200%;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    animation:flow 5s linear infinite;
-}
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
 
-@keyframes flow{
-    0%{background-position:0%}
-    100%{background-position:200%}
-}
+            line-height: 1.7;
+            color: var(--text);
+            min-height: 100vh;
 
-/* Container */
-.container{
-    max-width:820px;
-    margin:0 auto;
-    background:var(--surface);
-    backdrop-filter:blur(14px);
-    padding:40px;
-    border-radius:16px;
-    border:1px solid var(--border);
-    box-shadow:0 10px 50px rgba(0,0,0,0.7);
-}
+            padding: 20px 16px 48px;
+            overflow-x: hidden;
 
-/* Tabs */
-.tabs{display:flex;justify-content:center;margin-bottom:36px;gap:12px;}
+            background:
+                radial-gradient(
+                    1200px 700px at 10% -10%,
+                    rgba(255, 121, 0, 0.14),
+                    transparent 62%
+                ),
+                radial-gradient(
+                    1100px 650px at 100% 0%,
+                    rgba(214, 95, 0, 0.13),
+                    transparent 58%
+                ),
+                radial-gradient(
+                    900px 520px at 50% 120%,
+                    rgba(122, 50, 0, 0.18),
+                    transparent 64%
+                ),
+                linear-gradient(
+                    180deg,
+                    var(--bg-black-soft),
+                    var(--bg-black)
+                );
 
-.tab-btn{
-    padding:10px 26px;
-    border-radius:24px;
-    border:1px solid var(--border);
-    background:var(--surface-2);
-    color:var(--text-muted);
-    cursor:pointer;
-    transition:0.3s;
-}
+            background-attachment: fixed;
+            position: relative;
+        }
 
-.tab-btn.active{
-    background:linear-gradient(135deg,#FF7A00,#CC6200);
-    color:#fff;
-    box-shadow:0 0 20px rgba(255,122,0,0.4);
-}
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+            border-radius: 50%;
+            filter: blur(70px);
+        }
 
-/* Content */
-.content-section{display:none;}
-.content-section.active{display:block;animation:fadeIn .4s ease;}
+        body::before {
+            width: 380px;
+            height: 380px;
+            top: -140px;
+            left: -120px;
+            background: rgba(255, 121, 0, 0.13);
+        }
 
-@keyframes fadeIn{
-    from{opacity:0;transform:translateY(8px);}
-    to{opacity:1;}
-}
+        body::after {
+            width: 460px;
+            height: 460px;
+            right: -180px;
+            bottom: -180px;
+            background: rgba(214, 95, 0, 0.11);
+        }
 
-h2{color:var(--primary);}
-h3{color:var(--primary-light);margin-top:28px;}
-h4{color:var(--text-muted);}
+        .page {
+            position: relative;
+            z-index: 1;
+            max-width: 960px;
+            margin: 0 auto;
+        }
 
-ul{padding-left:20px;}
-li{margin-bottom:6px;}
+        /* =====================================================
+           HEADER
+        ====================================================== */
 
-.highlight-box{
-    background:rgba(255,122,0,0.06);
-    border-left:3px solid var(--primary);
-    padding:14px;
-    border-radius:8px;
-    margin:16px 0;
-}
+        .header {
+            text-align: center;
+            margin: 8px 0 28px;
+        }
 
-a{color:var(--primary);}
+        .top-logo {
+            width: min(92vw, 560px);
+            max-height: 190px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 14px;
 
-.last-updated{
-    text-align:center;
-    margin-top:44px;
-    border-top:1px solid var(--border);
-    padding-top:20px;
-    color:var(--text-muted);
-}
-</style>
+            opacity: 0.98;
+
+            filter:
+                drop-shadow(0 10px 35px rgba(255, 121, 0, 0.25))
+                drop-shadow(0 3px 12px rgba(255, 255, 255, 0.12));
+        }
+
+        .logo-name {
+            margin: 0;
+
+            font-size: clamp(
+                1.95rem,
+                3.6vw,
+                2.6rem
+            );
+
+            font-weight: 850;
+            letter-spacing: 0.02em;
+
+            color: #ffffff;
+
+            text-shadow:
+                0 0 22px rgba(255, 121, 0, 0.25);
+        }
+
+        .tagline {
+            margin-top: 8px;
+
+            font-size: 0.9rem;
+            font-weight: 700;
+
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+
+            color: #ffb067;
+
+            text-shadow:
+                0 0 14px rgba(255, 121, 0, 0.3);
+        }
+
+        /* =====================================================
+           LIQUID GLASS CONTAINER
+        ====================================================== */
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+
+            border-radius: 22px;
+
+            padding: 34px 34px 30px;
+
+            border: 1px solid var(--glass-border);
+
+            background:
+                linear-gradient(
+                    155deg,
+                    rgba(255, 255, 255, 0.08),
+                    rgba(255, 255, 255, 0.02) 35%,
+                    rgba(255, 255, 255, 0.01)
+                ),
+                var(--glass);
+
+            box-shadow:
+                inset 0 1px 0 var(--glass-highlight),
+                inset 0 -1px 0 rgba(255, 121, 0, 0.10),
+                var(--shadow);
+
+            backdrop-filter:
+                blur(20px)
+                saturate(140%);
+
+            -webkit-backdrop-filter:
+                blur(20px)
+                saturate(140%);
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+
+            position: absolute;
+
+            width: 320px;
+            height: 320px;
+
+            border-radius: 50%;
+
+            top: -150px;
+            left: -110px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255, 154, 71, 0.14),
+                    transparent 66%
+                );
+
+            pointer-events: none;
+        }
+
+        .container::after {
+            content: "";
+
+            position: absolute;
+
+            width: 240px;
+            height: 240px;
+
+            border-radius: 50%;
+
+            right: -80px;
+            top: 25%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255, 121, 0, 0.12),
+                    transparent 70%
+                );
+
+            pointer-events: none;
+        }
+
+        .container > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* =====================================================
+           TABS
+        ====================================================== */
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-bottom: 30px;
+
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 10px 26px;
+
+            border-radius: 999px;
+
+            border: 1px solid rgba(255, 137, 30, 0.25);
+
+            background:
+                rgba(12, 13, 15, 0.68);
+
+            color: var(--muted);
+
+            font-weight: 700;
+            font-size: 0.94rem;
+
+            cursor: pointer;
+
+            transition:
+                all 0.25s ease;
+
+            box-shadow:
+                inset 0 1px 0
+                rgba(255, 255, 255, 0.10);
+        }
+
+        .tab-btn:hover {
+            border-color:
+                rgba(255, 137, 30, 0.55);
+
+            color: #ffffff;
+
+            transform:
+                translateY(-1px);
+        }
+
+        .tab-btn.active {
+            color: #ffffff;
+
+            border-color:
+                rgba(255, 151, 62, 0.85);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 121, 0, 0.98),
+                    rgba(183, 70, 0, 0.98)
+                );
+
+            box-shadow:
+                0 8px 24px
+                rgba(255, 121, 0, 0.26),
+
+                inset 0 1px 0
+                rgba(255, 255, 255, 0.28);
+        }
+
+        /* =====================================================
+           CONTENT SECTIONS
+        ====================================================== */
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+
+            animation:
+                fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* =====================================================
+           TYPOGRAPHY
+        ====================================================== */
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+
+            padding-bottom: 12px;
+
+            font-size: 1.56rem;
+
+            color: #ffffff;
+
+            border-bottom:
+                1px solid
+                rgba(255, 137, 30, 0.22);
+
+            text-shadow:
+                0 0 16px
+                rgba(255, 121, 0, 0.20);
+        }
+
+        h3 {
+            margin-top: 26px;
+            margin-bottom: 8px;
+
+            font-size: 1.08rem;
+
+            color: #ffb067;
+        }
+
+        h4 {
+            margin-bottom: 4px;
+
+            font-size: 0.95rem;
+
+            color: #d5d8dc;
+        }
+
+        p {
+            margin: 0 0 12px;
+
+            color: var(--text);
+        }
+
+        ul {
+            margin: 0 0 14px;
+
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+
+            color: var(--text);
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        a {
+            color: #ffad62;
+
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+
+            text-decoration: underline;
+        }
+
+        /* =====================================================
+           HIGHLIGHT BOX
+        ====================================================== */
+
+        .highlight-box {
+            margin: 16px 0;
+
+            padding: 14px 18px;
+
+            border-radius: 10px;
+
+            border:
+                1px solid
+                rgba(255, 137, 30, 0.24);
+
+            border-left:
+                3px solid
+                var(--orange-500);
+
+            background:
+                var(--glass-strong);
+
+            color: var(--muted);
+
+            font-size: 0.95rem;
+
+            backdrop-filter:
+                blur(8px);
+        }
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        .last-updated {
+            margin-top: 40px;
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            font-size: 0.84rem;
+
+            color: #999da3;
+
+            border-top:
+                1px solid
+                rgba(255, 137, 30, 0.18);
+
+            letter-spacing: 0.01em;
+        }
+
+        .last-updated span {
+            color: #ffffff;
+
+            font-weight: 700;
+        }
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 720px) {
+
+            body {
+                padding:
+                    16px 12px 34px;
+            }
+
+            .container {
+                padding:
+                    24px 18px 22px;
+
+                border-radius:
+                    16px;
+            }
+
+            .top-logo {
+                width:
+                    min(94vw, 440px);
+
+                max-height:
+                    150px;
+
+                margin-bottom:
+                    10px;
+            }
+
+            h2 {
+                font-size:
+                    1.3rem;
+            }
+
+            h3 {
+                font-size:
+                    1.02rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="header">
-<div class="logo-wrap">
-<div class="logo-icon">
-<img src="http://i.imgur.com/AMnjrwt.png">
-</div>
-<span class="logo-name">LogisticLink</span>
-</div>
-<p class="tagline">Move Anything Anywhere</p>
-</div>
+    <div class="page">
 
-<div class="container">
+        <!-- =================================================
+             HEADER
+        ================================================== -->
 
-<div class="tabs">
-<button class="tab-btn active" onclick="showTab('privacy')">Privacy Policy</button>
-<button class="tab-btn" onclick="showTab('terms')">Terms of Use</button>
-</div>
+        <div class="header">
 
-<!-- PRIVACY -->
-<div id="privacy" class="content-section active">
+            <!--
+                Replace this image URL with the official CARSA Go
+                logo when the final hosted logo asset is available.
+            -->
+            <img
+                class="top-logo"
+                src="https://i.imgur.com/0pyvZgD.jpeg"
+                alt="CARSA Go Logo"
+            />
 
-<h2>Privacy Policy</h2>
+            <p class="logo-name">
+                CARSA Go
+            </p>
 
-<p><strong>Effective Date:</strong> April 7, 2026<br>
-<strong>Last Updated:</strong> April 7, 2026</p>
+            <p class="tagline">
+                LOGISTICS &amp; TRANSPORT PLATFORM
+            </p>
 
-<h3>1. Introduction</h3>
-<p>
-LogisticLink is a global logistics platform connecting users with independent drivers and transport providers.
-We are committed to protecting your personal data.
-</p>
+        </div>
 
-<h3>2. Definitions</h3>
-<ul>
-<li><strong>Service:</strong> LogisticLink application</li>
-<li><strong>User:</strong> Platform user</li>
-<li><strong>Driver:</strong> Independent contractor</li>
-<li><strong>Personal Data:</strong> Identifiable information</li>
-</ul>
 
-<h3>3. Information We Collect</h3>
-<ul>
-<li>Personal info (name, phone, email)</li>
-<li>Location & delivery data</li>
-<li>Device & analytics data</li>
-<li>Payment information such as phone number and detailed collected from the KYC </li>
-</ul>
+        <!-- =================================================
+             MAIN CONTAINER
+        ================================================== -->
 
-<h3>4. How We Use Data</h3>
-<ul>
-<li>Service delivery</li>
-<li>Matching with drivers</li>
-<li>Fraud prevention</li>
-<li>Platform improvement</li>
-</ul>
+        <div class="container">
 
-<h3>5. Cookies & Tracking</h3>
-<p>We use tracking technologies to improve experience.</p>
+            <!-- =================================================
+                 TABS
+            ================================================== -->
 
-<h3>6. Data Sharing</h3>
-<ul>
-<li>Drivers</li>
-<li>Payment providers</li>
-<li>Cloud infrastructure</li>
-</ul>
+            <div class="tabs">
 
-<h3>7. International Transfers</h3>
-<p>Your data may be processed globally.</p>
+                <button
+                    class="tab-btn active"
+                    onclick="showTab('privacy')"
+                >
+                    Privacy Policy
+                </button>
 
-<h3>8. Data Retention</h3>
-<p>We retain data as required legally and operationally.</p>
+                <button
+                    class="tab-btn"
+                    onclick="showTab('terms')"
+                >
+                    Terms of Use
+                </button>
 
-<h3>9. Security</h3>
-<p>We use encryption and secure systems.</p>
+            </div>
 
-<h3>10. Your Rights</h3>
-<ul>
-<li>Access</li>
-<li>Correction</li>
-<li>Deletion</li>
-<li>Portability</li>
-</ul>
 
-<h3>11. Data Breach Notification</h3>
-<p>Users will be notified if required by law.</p>
+            <!-- ═══════════════════════════════════════════════
+                 PRIVACY POLICY
+            ═══════════════════════════════════════════════ -->
 
-<h3>12. Children's Privacy</h3>
-<p>18+ only.</p>
+            <div
+                id="privacy"
+                class="content-section active"
+            >
 
-<h3>13. Changes</h3>
-<p>Policy may be updated.</p>
+                <h2>
+                    Privacy Policy
+                </h2>
 
-<h3>14. Contact</h3>
-<p>support@logisticlink.com</p>
+                <p>
+                    <strong>Effective Date:</strong>
+                    August 28, 2026
+                    <br />
 
-</div>
+                    <strong>Last Updated:</strong>
+                    August 28, 2026
+                </p>
 
-<!-- TERMS -->
-<div id="terms" class="content-section">
 
-<h2>Terms of Use</h2>
+                <h3>
+                    1. Introduction
+                </h3>
 
-<h3>1. Agreement</h3>
-<p>By using LogisticLink, you agree to these Terms.</p>
+                <p>
+                    CARSA Go ("CARSA", "we", "us", or "our") is a
+                    logistics and transportation platform that helps
+                    customers arrange transportation of packages,
+                    household goods, business goods, cargo, vehicles,
+                    and other eligible items between locations.
+                </p>
 
-<h3>2. Platform Nature</h3>
-<p>We connect users and drivers.</p>
+                <p>
+                    This Privacy Policy explains how CARSA Go collects,
+                    uses, stores, processes, and protects information
+                    when you use our mobile applications, website,
+                    logistics services, and related platform services
+                    (collectively, the "Services").
+                </p>
 
-<div class="highlight-box">
-We are NOT a transport provider.
-</div>
+                <p>
+                    By accessing or using CARSA Go, you acknowledge that
+                    you have read and understood this Privacy Policy.
+                </p>
 
-<h3>3. Eligibility</h3>
-<ul><li>18+</li><li>Accurate info required</li></ul>
 
-<h3>4. Responsibilities</h3>
-<ul>
-<li>Provide accurate details</li>
-<li>Legal goods only</li>
-</ul>
+                <h3>
+                    2. Information We Collect
+                </h3>
 
-<h3>5. Payments</h3>
-<p>Handled by third parties.</p>
 
-<h3>6. Refund Policy</h3>
-<p>Refunds depend on delivery status and review.</p>
+                <h4>
+                    2.1 Account Information
+                </h4>
 
-<h3>7. Disputes</h3>
-<p>Resolved via platform.</p>
+                <p>
+                    Depending on the services you use, we may collect
+                    information required to create and manage your
+                    account, including:
+                </p>
 
-<h3>8. Driver Agreement</h3>
-<p>Drivers are independent contractors.</p>
+                <ul>
+                    <li>Name or display name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>Account credentials</li>
+                    <li>Profile information</li>
+                    <li>Profile photograph, where provided</li>
+                    <li>Account type and role</li>
+                </ul>
 
-<h3>9. Liability</h3>
-<p>We are not liable for damages or losses.</p>
 
-<div class="highlight-box">
-Use at your own risk.
-</div>
+                <h4>
+                    2.2 Location Information
+                </h4>
 
-<h3>10. Legal Enforcement</h3>
-<p>Violations may lead to termination or legal action.</p>
+                <p>
+                    CARSA Go may process location information when it is
+                    necessary to provide transportation and logistics
+                    services.
+                </p>
 
-<h3>11. Governing Law</h3>
-<p>Depends on jurisdiction.</p>
+                <p>
+                    This may include:
+                </p>
 
-<h3>12. Contact</h3>
-<p>support@logisticlink.com</p>
+                <ul>
+                    <li>Pickup location</li>
+                    <li>Destination</li>
+                    <li>Route information</li>
+                    <li>Approximate distance</li>
+                    <li>Estimated travel time</li>
+                    <li>Driver location during an active delivery</li>
+                    <li>Location information associated with an order</li>
+                </ul>
 
-</div>
+                <p>
+                    Location permissions may be requested through your
+                    device. You can manage location permissions through
+                    your device settings, although disabling location
+                    access may affect certain CARSA Go features.
+                </p>
 
-<div class="last-updated">
-© 2026 LogisticLink — Move Anything Anywhere
-</div>
 
-</div>
+                <h4>
+                    2.3 Cargo Information
+                </h4>
 
-<script>
-function showTab(tabName){
-document.querySelectorAll('.content-section').forEach(s=>s.classList.remove('active'));
-document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-document.getElementById(tabName).classList.add('active');
-const btn=[...document.querySelectorAll('.tab-btn')]
-.find(b=>b.getAttribute('onclick').includes(tabName));
-if(btn)btn.classList.add('active');
-}
-</script>
+                <p>
+                    When you create a transportation request, we may
+                    collect information about the cargo you intend to
+                    transport.
+                </p>
+
+                <ul>
+                    <li>Cargo category</li>
+                    <li>Cargo item</li>
+                    <li>Item variant or specification</li>
+                    <li>Quantity</li>
+                    <li>Weight, where provided</li>
+                    <li>Dimensions, where provided</li>
+                    <li>Special handling requirements</li>
+                    <li>Fragile-item information</li>
+                    <li>Vehicle requirements</li>
+                    <li>Pickup and destination information</li>
+                    <li>Other information necessary to provide transportation</li>
+                </ul>
+
+
+                <h4>
+                    2.4 Cargo Photographs and Evidence
+                </h4>
+
+                <p>
+                    CARSA Go may allow or require customers to upload
+                    photographs of cargo before transportation.
+                </p>
+
+                <div class="highlight-box">
+                    <strong>Important:</strong>
+                    Cargo photographs may be retained as part of the
+                    transportation record and may be used for cargo
+                    identification, security, pickup verification,
+                    delivery verification, dispute resolution, and
+                    receipt generation.
+                </div>
+
+                <p>
+                    Cargo photographs may be associated with specific
+                    cargo items, including their category, selected
+                    specifications, quantity, transportation price,
+                    order, and delivery status.
+                </p>
+
+                <p>
+                    Where appropriate, drivers or authorized logistics
+                    personnel may also upload photographs during pickup
+                    or delivery for verification purposes.
+                </p>
+
+
+                <h4>
+                    2.5 Payment Information
+                </h4>
+
+                <p>
+                    When you make a payment through CARSA Go, we may
+                    collect information necessary to process and record
+                    the transaction.
+                </p>
+
+                <p>
+                    Depending on the payment method, payment processing
+                    may be performed by third-party payment providers.
+                    CARSA Go may receive transaction information such as:
+                </p>
+
+                <ul>
+                    <li>Payment amount</li>
+                    <li>Transaction reference</li>
+                    <li>Payment status</li>
+                    <li>Payment date and time</li>
+                    <li>Payment method or provider</li>
+                    <li>Advance payment information</li>
+                    <li>Remaining balance information</li>
+                </ul>
+
+                <p>
+                    We do not intend to store complete payment-card
+                    credentials when payment processing is performed by
+                    an external payment provider.
+                </p>
+
+
+                <h4>
+                    2.6 Device and Technical Information
+                </h4>
+
+                <p>
+                    We may automatically collect technical information
+                    about the device and application used to access
+                    CARSA Go.
+                </p>
+
+                <ul>
+                    <li>Device model</li>
+                    <li>Operating system</li>
+                    <li>Application version</li>
+                    <li>Device identifiers</li>
+                    <li>IP address</li>
+                    <li>Network information</li>
+                    <li>Crash information</li>
+                    <li>Performance information</li>
+                    <li>Application usage information</li>
+                </ul>
+
+
+                <h4>
+                    2.7 Communications
+                </h4>
+
+                <p>
+                    If you contact CARSA Go support, we may retain
+                    information contained in your communications,
+                    including support requests, complaints, disputes,
+                    feedback, and related attachments.
+                </p>
+
+
+                <h3>
+                    3. How We Use Your Information
+                </h3>
+
+                <p>
+                    CARSA Go may use information collected through the
+                    Services to:
+                </p>
+
+                <ul>
+                    <li>Create and manage your account</li>
+                    <li>Process transportation requests</li>
+                    <li>Identify and classify cargo</li>
+                    <li>Calculate transportation quotations</li>
+                    <li>Determine appropriate transportation options</li>
+                    <li>Coordinate drivers and logistics companies</li>
+                    <li>Process payments and balances</li>
+                    <li>Track active transportation orders</li>
+                    <li>Verify cargo at pickup and delivery</li>
+                    <li>Generate transportation receipts</li>
+                    <li>Investigate cargo disputes</li>
+                    <li>Detect fraud, abuse, or unauthorized activity</li>
+                    <li>Improve platform performance</li>
+                    <li>Provide customer support</li>
+                    <li>Maintain platform security</li>
+                    <li>Comply with applicable legal obligations</li>
+                </ul>
+
+
+                <h3>
+                    4. Cargo Evidence and Verification
+                </h3>
+
+                <p>
+                    CARSA Go is designed to maintain a record connecting
+                    cargo photographs with the cargo declared by the
+                    customer.
+                </p>
+
+                <p>
+                    For example, if a customer uploads a photograph of a
+                    television and subsequently declares the item as a
+                    55-inch television, the photograph may be associated
+                    with that declared cargo item.
+                </p>
+
+                <p>
+                    This information may be used to help establish what
+                    cargo was declared, collected, transported, and
+                    delivered.
+                </p>
+
+                <p>
+                    Evidence may be used by authorized CARSA personnel,
+                    drivers, logistics companies, support personnel, or
+                    other parties where necessary to operate or resolve
+                    an order.
+                </p>
+
+
+                <h3>
+                    5. Sharing of Information
+                </h3>
+
+                <p>
+                    We may share information where reasonably necessary
+                    to provide the Services.
+                </p>
+
+                <h4>
+                    5.1 Drivers and Logistics Companies
+                </h4>
+
+                <p>
+                    Information necessary to complete a transportation
+                    order may be shared with the driver or logistics
+                    company responsible for fulfilling the order.
+                </p>
+
+                <p>
+                    This may include:
+                </p>
+
+                <ul>
+                    <li>Pickup information</li>
+                    <li>Destination information</li>
+                    <li>Cargo description</li>
+                    <li>Relevant cargo photographs</li>
+                    <li>Special handling requirements</li>
+                    <li>Order and delivery information</li>
+                </ul>
+
+
+                <h4>
+                    5.2 Service Providers
+                </h4>
+
+                <p>
+                    We may use trusted third-party providers for
+                    services such as:
+                </p>
+
+                <ul>
+                    <li>Cloud hosting</li>
+                    <li>Database infrastructure</li>
+                    <li>Payment processing</li>
+                    <li>Maps and routing</li>
+                    <li>Notifications</li>
+                    <li>Analytics</li>
+                    <li>Security</li>
+                    <li>Customer support</li>
+                </ul>
+
+
+                <h4>
+                    5.3 Legal Requirements
+                </h4>
+
+                <p>
+                    We may disclose information where required or
+                    permitted by applicable law, regulation, court
+                    order, governmental authority, or legal process.
+                </p>
+
+
+                <h3>
+                    6. Data Storage and Security
+                </h3>
+
+                <p>
+                    We use reasonable technical and organizational
+                    measures designed to protect information against
+                    unauthorized access, alteration, disclosure, loss,
+                    or destruction.
+                </p>
+
+                <p>
+                    Access to sensitive information is restricted based
+                    on user roles and operational requirements.
+                </p>
+
+                <p>
+                    Cargo photographs and other evidence may be stored
+                    using protected storage systems and may not be
+                    publicly accessible.
+                </p>
+
+                <p>
+                    No internet-based service can guarantee absolute
+                    security. You acknowledge that transmission and
+                    storage of information always involve some level of
+                    risk.
+                </p>
+
+
+                <h3>
+                    7. Data Retention
+                </h3>
+
+                <p>
+                    We may retain information for as long as reasonably
+                    necessary to:
+                </p>
+
+                <ul>
+                    <li>Provide the Services</li>
+                    <li>Maintain transaction records</li>
+                    <li>Maintain transportation records</li>
+                    <li>Resolve disputes</li>
+                    <li>Prevent fraud</li>
+                    <li>Maintain security</li>
+                    <li>Meet legal or regulatory obligations</li>
+                </ul>
+
+                <p>
+                    Certain transportation, payment, verification, and
+                    evidence records may need to be retained after an
+                    account is deleted where required for legitimate
+                    business, security, dispute-resolution, or legal
+                    purposes.
+                </p>
+
+
+                <h3>
+                    8. Your Rights
+                </h3>
+
+                <p>
+                    Depending on applicable law, you may have rights
+                    regarding your personal information, including:
+                </p>
+
+                <ul>
+
+                    <li>
+                        <strong>Access your data</strong> –
+                        Request information about personal information
+                        we hold about you.
+                    </li>
+
+                    <li>
+                        <strong>Correct your data</strong> –
+                        Request correction of inaccurate information.
+                    </li>
+
+                    <li>
+                        <strong>Delete your account</strong> –
+                        Request deletion of your account and eligible
+                        associated information.
+                    </li>
+
+                    <li>
+                        <strong>Withdraw certain permissions</strong> –
+                        Manage permissions such as location access
+                        through your device.
+                    </li>
+
+                </ul>
+
+                <p>
+                    If you still have access to CARSA Go, account
+                    deletion may be available through:
+                </p>
+
+                <p>
+                    <strong>
+                        Profile → Account → Delete Account
+                    </strong>
+                </p>
+
+                <p>
+                    If you cannot access your account, contact:
+                    <a href="mailto:support@carsago.com">
+                        support@carsago.com
+                    </a>
+                </p>
+
+
+                <h3>
+                    9. Location Permissions
+                </h3>
+
+                <p>
+                    Certain CARSA Go features require location
+                    information to function correctly.
+                </p>
+
+                <p>
+                    You can disable location permissions through your
+                    device settings. However, disabling location
+                    services may prevent CARSA Go from providing
+                    certain transportation, tracking, routing, or
+                    pickup-related features.
+                </p>
+
+
+                <h3>
+                    10. Children’s Privacy
+                </h3>
+
+                <p>
+                    CARSA Go is not intended for children who are below
+                    the minimum age required to independently use the
+                    Services under applicable law.
+                </p>
+
+                <p>
+                    We do not knowingly request unnecessary personal
+                    information from children.
+                </p>
+
+
+                <h3>
+                    11. Third-Party Services
+                </h3>
+
+                <p>
+                    CARSA Go may integrate with third-party services,
+                    including payment providers, mapping services,
+                    cloud infrastructure, communication services, and
+                    analytics providers.
+                </p>
+
+                <p>
+                    Third-party services may process information under
+                    their own privacy policies and terms.
+                </p>
+
+
+                <h3>
+                    12. Changes to This Privacy Policy
+                </h3>
+
+                <p>
+                    We may update this Privacy Policy from time to time
+                    to reflect changes to our Services, technology,
+                    legal requirements, or business practices.
+                </p>
+
+                <p>
+                    When material changes are made, we may provide
+                    appropriate notice through the application, website,
+                    or other available communication channels.
+                </p>
+
+
+                <h3>
+                    13. Contact Us
+                </h3>
+
+                <p>
+                    If you have questions about this Privacy Policy or
+                    how CARSA Go handles your information, contact us:
+                </p>
+
+                <p>
+                    📧
+                    <a href="mailto:support@carsago.com">
+                        support@carsago.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- ═══════════════════════════════════════════════
+                 TERMS OF USE
+            ═══════════════════════════════════════════════ -->
+
+            <div
+                id="terms"
+                class="content-section"
+            >
+
+                <h2>
+                    Terms of Use
+                </h2>
+
+                <p>
+                    <strong>Effective Date:</strong>
+                    August 28, 2026
+                    <br />
+
+                    <strong>Last Updated:</strong>
+                    August 28, 2026
+                </p>
+
+
+                <h3>
+                    1. Agreement to Terms
+                </h3>
+
+                <p>
+                    These Terms of Use constitute an agreement between
+                    you ("you", "your", or "user") and CARSA Go
+                    ("CARSA", "we", "us", or "our") governing your use
+                    of the CARSA Go application, website, and logistics
+                    services.
+                </p>
+
+                <p>
+                    By accessing or using CARSA Go, you agree to be bound
+                    by these Terms of Use and our Privacy Policy.
+                </p>
+
+                <p>
+                    If you do not agree with these Terms, you should not
+                    use the Services.
+                </p>
+
+
+                <h3>
+                    2. About CARSA Go
+                </h3>
+
+                <p>
+                    CARSA Go is a technology-enabled logistics and
+                    transportation platform designed to connect
+                    customers with transportation services.
+                </p>
+
+                <p>
+                    Depending on the service available in your location,
+                    CARSA Go may facilitate transportation of:
+                </p>
+
+                <ul>
+                    <li>Packages and parcels</li>
+                    <li>Documents</li>
+                    <li>Household goods</li>
+                    <li>Furniture</li>
+                    <li>Electronics</li>
+                    <li>Business goods</li>
+                    <li>Agricultural goods</li>
+                    <li>Construction materials</li>
+                    <li>Vehicles</li>
+                    <li>Eligible machinery and equipment</li>
+                    <li>Other permitted cargo</li>
+                </ul>
+
+
+                <h3>
+                    3. Eligibility
+                </h3>
+
+                <p>
+                    You must satisfy the minimum legal age and other
+                    requirements applicable to your use of CARSA Go.
+                </p>
+
+                <p>
+                    By creating an account, you confirm that the
+                    information you provide is accurate and that you
+                    have the legal capacity to enter into applicable
+                    transactions.
+                </p>
+
+
+                <h3>
+                    4. Account Registration
+                </h3>
+
+                <p>
+                    You are responsible for maintaining accurate account
+                    information and protecting your account credentials.
+                </p>
+
+                <p>
+                    You must not:
+                </p>
+
+                <ul>
+                    <li>Create an account using false information</li>
+                    <li>Impersonate another person</li>
+                    <li>Share your account credentials improperly</li>
+                    <li>Attempt to access another user's account</li>
+                    <li>Use the platform for fraudulent activity</li>
+                </ul>
+
+
+                <h3>
+                    5. Transportation Requests
+                </h3>
+
+                <p>
+                    When creating a transportation request, you are
+                    responsible for providing accurate information
+                    about:
+                </p>
+
+                <ul>
+                    <li>Pickup location</li>
+                    <li>Destination</li>
+                    <li>Cargo</li>
+                    <li>Quantity</li>
+                    <li>Relevant dimensions or weight</li>
+                    <li>Special handling requirements</li>
+                    <li>Other information requested by CARSA Go</li>
+                </ul>
+
+                <p>
+                    Incorrect or incomplete information may result in
+                    additional charges, delays, vehicle changes,
+                    cancellation, or refusal to transport the cargo.
+                </p>
+
+
+                <h3>
+                    6. Cargo Photographs and Declaration
+                </h3>
+
+                <div class="highlight-box">
+
+                    <strong>
+                        Cargo photographs are an important part of the
+                        CARSA Go transportation record.
+                    </strong>
+
+                    Customers may be required to provide photographs
+                    showing the cargo they intend to transport.
+
+                </div>
+
+                <p>
+                    Uploaded photographs may be used to help identify
+                    the cargo, determine suitable transportation
+                    requirements, verify pickup and delivery, resolve
+                    disputes, and generate transportation receipts.
+                </p>
+
+                <p>
+                    You must not upload photographs that are misleading,
+                    fraudulent, unlawful, or unrelated to the cargo
+                    being transported.
+                </p>
+
+
+                <h3>
+                    7. Cargo Categories and Specifications
+                </h3>
+
+                <p>
+                    CARSA Go may provide a dynamic catalog containing
+                    categories, subcategories, items, variants, and
+                    other cargo attributes.
+                </p>
+
+                <p>
+                    Examples may include:
+                </p>
+
+                <ul>
+                    <li>Electronics → Television → 55-inch</li>
+                    <li>Furniture → Bed → Full Bed + Mattress</li>
+                    <li>Appliances → Refrigerator</li>
+                    <li>Vehicles → Sedan</li>
+                    <li>Boxes &amp; Cartons → Large Carton</li>
+                </ul>
+
+                <p>
+                    The available categories, specifications, and
+                    requirements may change over time.
+                </p>
+
+
+                <h3>
+                    8. Transportation Pricing
+                </h3>
+
+                <p>
+                    Transportation prices may depend on several
+                    factors, including:
+                </p>
+
+                <ul>
+                    <li>Type of cargo</li>
+                    <li>Quantity</li>
+                    <li>Weight</li>
+                    <li>Dimensions or volume</li>
+                    <li>Pickup location</li>
+                    <li>Destination</li>
+                    <li>Distance</li>
+                    <li>Vehicle requirements</li>
+                    <li>Fuel and logistics costs</li>
+                    <li>Handling requirements</li>
+                    <li>Fragile cargo requirements</li>
+                    <li>Loading and unloading requirements</li>
+                    <li>Remote-area conditions</li>
+                    <li>Other applicable logistics factors</li>
+                </ul>
+
+                <p>
+                    Prices displayed by CARSA Go may therefore change
+                    over time.
+                </p>
+
+
+                <h3>
+                    9. Quotes and Price Validity
+                </h3>
+
+                <p>
+                    A transportation quotation may be valid only for a
+                    specified period.
+                </p>
+
+                <p>
+                    If a quotation expires before confirmation, CARSA Go
+                    may require the quotation to be recalculated.
+                </p>
+
+                <p>
+                    Where the price changes before confirmation, the
+                    updated price may need to be reviewed and accepted
+                    before an order can proceed.
+                </p>
+
+
+                <h3>
+                    10. Payment
+                </h3>
+
+                <p>
+                    Depending on the service and applicable payment
+                    options, CARSA Go may allow customers to:
+                </p>
+
+                <ul>
+                    <li>Pay the full transportation amount</li>
+                    <li>Pay an approved advance amount</li>
+                    <li>Pay the remaining balance after delivery</li>
+                </ul>
+
+                <p>
+                    The applicable payment terms will be displayed
+                    before the payment is initiated.
+                </p>
+
+
+                <h3>
+                    11. Advance Payment
+                </h3>
+
+                <p>
+                    Where advance payment is available, CARSA Go will
+                    display the total transportation amount, the amount
+                    payable in advance, and the remaining balance.
+                </p>
+
+                <div class="highlight-box">
+
+                    Example:
+
+                    <br /><br />
+
+                    Total transportation cost:
+                    <strong>TZS 200,000</strong>
+
+                    <br />
+
+                    Advance payment:
+                    <strong>TZS 100,000</strong>
+
+                    <br />
+
+                    Remaining balance:
+                    <strong>TZS 100,000</strong>
+
+                </div>
+
+                <p>
+                    The applicable percentage or amount of the advance
+                    payment may depend on CARSA Go's service rules.
+                </p>
+
+
+                <h3>
+                    12. Remaining Balance
+                </h3>
+
+                <p>
+                    Where an order uses an advance-payment arrangement,
+                    the remaining balance becomes payable according to
+                    the applicable delivery and payment terms.
+                </p>
+
+                <p>
+                    An order may remain in an outstanding payment state
+                    until the required remaining balance has been paid.
+                </p>
+
+
+                <h3>
+                    13. Drivers and Logistics Companies
+                </h3>
+
+                <p>
+                    Transportation may be fulfilled by drivers,
+                    logistics operators, companies, or other approved
+                    transportation providers operating through or in
+                    connection with CARSA Go.
+                </p>
+
+                <p>
+                    The availability of particular vehicles, drivers,
+                    companies, or transportation services may vary by
+                    location and time.
+                </p>
+
+
+                <h3>
+                    14. Pickup Verification
+                </h3>
+
+                <p>
+                    At pickup, the cargo may be checked against the
+                    customer's declared cargo and associated photographs.
+                </p>
+
+                <p>
+                    Drivers or authorized logistics personnel may record
+                    pickup information or evidence where appropriate.
+                </p>
+
+                <p>
+                    Significant differences between declared and
+                    presented cargo may result in additional charges,
+                    delays, cancellation, or a requirement for a new
+                    quotation.
+                </p>
+
+
+                <h3>
+                    15. Delivery Verification
+                </h3>
+
+                <p>
+                    CARSA Go may use delivery confirmation and evidence
+                    to establish whether cargo has reached its
+                    destination.
+                </p>
+
+                <p>
+                    Delivery evidence may include photographs,
+                    timestamps, order information, customer
+                    confirmation, driver confirmation, or other
+                    verification mechanisms.
+                </p>
+
+
+                <h3>
+                    16. Cargo Disputes
+                </h3>
+
+                <p>
+                    If cargo is reported as missing, damaged, incorrect,
+                    or otherwise inconsistent with the transportation
+                    declaration, CARSA Go may investigate the issue.
+                </p>
+
+                <p>
+                    Investigation may consider:
+                </p>
+
+                <ul>
+                    <li>Original cargo photographs</li>
+                    <li>Pickup evidence</li>
+                    <li>Delivery evidence</li>
+                    <li>Order information</li>
+                    <li>Driver records</li>
+                    <li>Customer confirmation</li>
+                    <li>Payment records</li>
+                    <li>Other relevant information</li>
+                </ul>
+
+
+                <h3>
+                    17. Prohibited Cargo
+                </h3>
+
+                <p>
+                    Users must not use CARSA Go to transport cargo that
+                    is prohibited by applicable law, CARSA Go policies,
+                    or the transportation provider's requirements.
+                </p>
+
+                <p>
+                    This may include, depending on applicable laws and
+                    service restrictions:
+                </p>
+
+                <ul>
+                    <li>Illegal goods</li>
+                    <li>Stolen property</li>
+                    <li>Explosives</li>
+                    <li>Illegal weapons</li>
+                    <li>Illegal drugs</li>
+                    <li>Hazardous materials without authorization</li>
+                    <li>Restricted biological materials</li>
+                    <li>Other prohibited or unlawful goods</li>
+                </ul>
+
+                <p>
+                    CARSA Go may refuse, cancel, or suspend transportation
+                    involving prohibited or suspicious cargo.
+                </p>
+
+
+                <h3>
+                    18. User Responsibilities
+                </h3>
+
+                <p>
+                    You agree to:
+                </p>
+
+                <ul>
+                    <li>Provide accurate information</li>
+                    <li>Declare cargo honestly</li>
+                    <li>Provide accurate photographs when requested</li>
+                    <li>Pay applicable transportation charges</li>
+                    <li>Provide accurate pickup and destination information</li>
+                    <li>Follow applicable transportation instructions</li>
+                    <li>Use CARSA Go lawfully</li>
+                    <li>Cooperate with legitimate verification processes</li>
+                </ul>
+
+
+                <h3>
+                    19. Misuse of the Platform
+                </h3>
+
+                <p>
+                    You may not use CARSA Go to:
+                </p>
+
+                <ul>
+                    <li>Commit fraud</li>
+                    <li>Upload fraudulent cargo evidence</li>
+                    <li>Manipulate prices or transactions</li>
+                    <li>Abuse drivers or logistics providers</li>
+                    <li>Interfere with the platform</li>
+                    <li>Attempt unauthorized access</li>
+                    <li>Reverse engineer security systems</li>
+                    <li>Use automated systems to abuse the Services</li>
+                    <li>Submit intentionally false disputes</li>
+                    <li>Transport prohibited goods</li>
+                </ul>
+
+
+                <h3>
+                    20. Cancellation
+                </h3>
+
+                <p>
+                    Orders may be subject to cancellation rules
+                    depending on their current status, transportation
+                    stage, payment status, and applicable CARSA Go
+                    policies.
+                </p>
+
+                <p>
+                    Cancellation after a driver or logistics provider
+                    has already incurred costs may result in applicable
+                    fees or deductions.
+                </p>
+
+
+                <h3>
+                    21. Receipts and Transportation Records
+                </h3>
+
+                <p>
+                    CARSA Go may generate digital receipts containing
+                    information associated with a transportation order.
+                </p>
+
+                <p>
+                    A receipt may include:
+                </p>
+
+                <ul>
+                    <li>Order reference</li>
+                    <li>Customer information</li>
+                    <li>Pickup location</li>
+                    <li>Destination</li>
+                    <li>Distance</li>
+                    <li>Cargo photographs</li>
+                    <li>Cargo categories</li>
+                    <li>Cargo specifications</li>
+                    <li>Quantities</li>
+                    <li>Transportation charges</li>
+                    <li>Advance payment</li>
+                    <li>Remaining balance</li>
+                    <li>Delivery verification</li>
+                    <li>Payment status</li>
+                </ul>
+
+                <p>
+                    Cargo photographs may therefore form part of the
+                    transportation receipt and record.
+                </p>
+
+
+                <h3>
+                    22. Intellectual Property
+                </h3>
+
+                <p>
+                    Unless otherwise stated, CARSA Go and its associated
+                    software, branding, interfaces, designs, databases,
+                    graphics, logos, text, and other platform materials
+                    are owned by or licensed to CARSA Go and are
+                    protected by applicable intellectual-property laws.
+                </p>
+
+                <p>
+                    You may not copy, reproduce, modify, distribute,
+                    reverse engineer, sell, or commercially exploit
+                    CARSA Go materials without appropriate authorization.
+                </p>
+
+
+                <h3>
+                    23. User Content
+                </h3>
+
+                <p>
+                    You retain applicable rights in content you submit
+                    to CARSA Go, including cargo photographs and other
+                    information you provide.
+                </p>
+
+                <p>
+                    By submitting content necessary to use the Services,
+                    you grant CARSA Go permission to process, store,
+                    display, transmit, and use that content as reasonably
+                    necessary to operate, secure, verify, support, and
+                    improve the Services.
+                </p>
+
+
+                <h3>
+                    24. Service Availability
+                </h3>
+
+                <p>
+                    CARSA Go does not guarantee that the Services will
+                    always be available, uninterrupted, secure, or
+                    error-free.
+                </p>
+
+                <p>
+                    Availability may be affected by network failures,
+                    maintenance, technical issues, third-party services,
+                    weather, road conditions, transportation conditions,
+                    emergencies, or other circumstances outside our
+                    reasonable control.
+                </p>
+
+
+                <h3>
+                    25. Logistics and External Conditions
+                </h3>
+
+                <p>
+                    Transportation may be affected by factors including:
+                </p>
+
+                <ul>
+                    <li>Fuel-price changes</li>
+                    <li>Traffic</li>
+                    <li>Road conditions</li>
+                    <li>Weather</li>
+                    <li>Vehicle availability</li>
+                    <li>Distance</li>
+                    <li>Government restrictions</li>
+                    <li>Security conditions</li>
+                    <li>Unexpected logistical circumstances</li>
+                </ul>
+
+                <p>
+                    Estimated travel times and transportation prices may
+                    therefore change where circumstances reasonably
+                    require.
+                </p>
+
+
+                <h3>
+                    26. Disclaimer
+                </h3>
+
+                <p>
+                    To the fullest extent permitted by applicable law,
+                    CARSA Go provides its technology platform and
+                    logistics services on an "as is" and "as available"
+                    basis.
+                </p>
+
+                <p>
+                    We do not guarantee that every transportation request
+                    will be accepted, fulfilled within an estimated
+                    timeframe, or completed without circumstances beyond
+                    our reasonable control.
+                </p>
+
+
+                <h3>
+                    27. Limitation of Liability
+                </h3>
+
+                <p>
+                    To the fullest extent permitted by applicable law,
+                    CARSA Go, its owners, developers, employees,
+                    affiliates, partners, and service providers shall
+                    not be liable for indirect, incidental, special,
+                    consequential, or punitive damages arising from or
+                    related to use of the Services.
+                </p>
+
+                <p>
+                    This may include losses arising from:
+                </p>
+
+                <ul>
+                    <li>Temporary service interruption</li>
+                    <li>Network failure</li>
+                    <li>Incorrect user-provided information</li>
+                    <li>Delays caused by external circumstances</li>
+                    <li>Unauthorized access outside our reasonable control</li>
+                    <li>Third-party service failures</li>
+                </ul>
+
+                <p>
+                    Nothing in these Terms is intended to exclude
+                    liability that cannot lawfully be excluded under
+                    applicable law.
+                </p>
+
+
+                <h3>
+                    28. Account Suspension or Termination
+                </h3>
+
+                <p>
+                    CARSA Go may suspend, restrict, or terminate an
+                    account where reasonably necessary to protect users,
+                    the platform, transportation providers, or the
+                    integrity of the Services.
+                </p>
+
+                <p>
+                    Reasons may include:
+                </p>
+
+                <ul>
+                    <li>Fraud</li>
+                    <li>Payment abuse</li>
+                    <li>False cargo declarations</li>
+                    <li>Prohibited cargo</li>
+                    <li>Security violations</li>
+                    <li>Abuse of users or service providers</li>
+                    <li>Repeated violations of these Terms</li>
+                </ul>
+
+
+                <h3>
+                    29. Account Deletion
+                </h3>
+
+                <p>
+                    Users may request deletion of their CARSA Go account
+                    and eligible associated personal information.
+                </p>
+
+                <p>
+                    If you still have access to the application, you may
+                    use:
+                </p>
+
+                <p>
+                    <strong>
+                        Profile → Account → Delete Account
+                    </strong>
+                </p>
+
+                <p>
+                    If you cannot access your account, contact:
+                </p>
+
+                <p>
+                    <a href="mailto:support@carsago.com">
+                        support@carsago.com
+                    </a>
+                </p>
+
+                <p>
+                    Certain information may be retained where reasonably
+                    necessary for legal compliance, financial records,
+                    security, fraud prevention, dispute resolution, or
+                    legitimate operational purposes.
+                </p>
+
+
+                <h3>
+                    30. Changes to These Terms
+                </h3>
+
+                <p>
+                    CARSA Go may update these Terms from time to time.
+                    Updated Terms may be published through the
+                    application or website.
+                </p>
+
+                <p>
+                    Continued use of CARSA Go after applicable changes
+                    take effect constitutes acceptance of the updated
+                    Terms, to the extent permitted by law.
+                </p>
+
+
+                <h3>
+                    31. Governing Law
+                </h3>
+
+                <p>
+                    These Terms shall be governed by and interpreted in
+                    accordance with the laws of the
+                    <strong>
+                        United Republic of Tanzania
+                    </strong>,
+                    without regard to conflict-of-law principles.
+                </p>
+
+                <p>
+                    Subject to applicable law, disputes arising from or
+                    relating to these Terms or the use of CARSA Go shall
+                    be handled by the competent courts and authorities
+                    of Tanzania.
+                </p>
+
+
+                <h3>
+                    32. Contact Us
+                </h3>
+
+                <p>
+                    If you have questions, complaints, support requests,
+                    or concerns regarding these Terms, contact CARSA Go:
+                </p>
+
+                <p>
+                    📧
+                    <a href="mailto:support@carsago.com">
+                        support@carsago.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+
+            <div class="last-updated">
+
+                &copy; 2026
+
+                <span>
+                    CARSA Go
+                </span>
+
+                . All rights reserved.
+
+                &nbsp;|&nbsp;
+
+                LOGISTICS &amp; TRANSPORT PLATFORM
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         TAB JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        function showTab(tabName) {
+
+            document
+                .querySelectorAll(".content-section")
+                .forEach((section) => {
+
+                    section.classList.remove("active");
+
+                });
+
+
+            document
+                .querySelectorAll(".tab-btn")
+                .forEach((button) => {
+
+                    button.classList.remove("active");
+
+                });
+
+
+            document
+                .getElementById(tabName)
+                .classList.add("active");
+
+
+            const button =
+                Array.from(
+                    document.querySelectorAll(".tab-btn")
+                ).find(
+                    (btn) =>
+                        btn
+                            .getAttribute("onclick")
+                            .includes(tabName)
+                );
+
+
+            if (button) {
+
+                button.classList.add("active");
+
+            }
+
+        }
+
+    </script>
 
 </body>
 </html>
